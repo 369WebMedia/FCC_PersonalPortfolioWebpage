@@ -1,0 +1,29 @@
+
+#navbar {
+    position: fixed;
+    top: 0px;
+	  left: 0px;
+	  width: 100%;
+	  height: auto;
+    padding-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(59, 59, 58);
+    z-index: 1;
+  }
+#welcome-section{
+    border: 2px solid red;
+    background-color: rgba(0, 139, 139, 0.664);
+    width: 95em;
+    height: 40em;
+}
+#projects{
+    background-color: darkmagenta;
+}
+.project-tile{
+    border: 2px solid lightblue;
+    width: 10vw;
+    height: 20vw;
+}
