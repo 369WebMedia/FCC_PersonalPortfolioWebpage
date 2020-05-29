@@ -5,20 +5,22 @@
     --color-body-text: #f3f3f3; /*white*/
     --color-button-background: rgba(0, 82, 204, 0.89); /*blue*/
     --color-button-hover: rgb(80, 113, 163); /*blue*/
-    --color-navbar-background: rgba(175, 8, 92);/*pinkish*/
+    --color-navbar-background: rgb(141, 6, 96);/*blue*/
     --color-projects-background: rgb(171, 175, 175);
-    --color-footer: rgb(41, 39, 40); /*pinkish*/
+    --color-footer: rgb(175, 8, 92); /*pink*/
   }
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
     color: var(--color-body-text);
 }
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
 body::before {
     content: '';
     position: fixed;
@@ -29,23 +31,25 @@ body::before {
     z-index: -1; 
     background: var(--color-body-background);
     background-image: linear-gradient(180deg,
-      rgba(0, 0, 0, 0.9),
-      rgba(87, 87, 88, 0.904)
+    rgba(0, 0, 0, 0.9),
+    rgba(87, 87, 88, 0.904)
     ), url(https://d1o50x50snmhul.cloudfront.net/wp-content/uploads/2017/02/22180000/ff3ywn-1.jpg); 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
+
 h1{
     font-size: 5em;
 }
 h2{
-    font-size: 3em;
+    font-size: 4.5em;
 }
 section{
     position: relative;
 }
-.navbar {
+
+#navbar {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -55,10 +59,15 @@ section{
     width: 100%;
     height: fit-content;
     padding-top: 0;
-    background-color: var(--color-navbar-background);/**
-    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.4); **/
     z-index: 10;
-  }
+    background-color: var(--color-navbar-background);
+    box-shadow: 0 3px 0 rgba(67, 12, 104, 0.4);
+    background-image: linear-gradient(170deg,
+      rgba(131, 4, 127, 0.904),
+      rgba(49, 1, 70, 0.9)
+    ), url();
+}
+    
   .nav-links{
     display: flex;
     padding: 3rem 0rem;
@@ -67,10 +76,10 @@ section{
     font-size: 2rem;
     color: floralwhite;
     text-decoration: none;
-    padding: 3rem 5rem;
+    padding: 2.9rem 5rem;
   }
   .nav-links a:hover{
-      background-color: rgb(44, 128, 134);
+      background-color: rgb(129, 30, 96);
   }
 
 #welcome-section{
@@ -83,6 +92,7 @@ section{
     color: mintcream;
     position: relative;
 }
+
 #projects{
     background-color: var(--color-projects-background);
     width: 100%;
@@ -90,6 +100,7 @@ section{
     position: relative;
     padding: 10em 0;
 }
+
 .project-tile > div{
     background: #34495e;
     color: white;
@@ -111,6 +122,7 @@ section{
     height: 30vw;
     width: 100%;
 }
+
 .btn{
     background-color: rgba(255, 77, 77, 1);
     width:  100%;
@@ -122,6 +134,7 @@ section{
     text-align:center;
     transition: all 2s;
 }
+
 .btn:hover, .btn:active {
     background-color: #FFFFFF;
     border:.2em solid rgba(204, 0, 0, .7);
@@ -129,6 +142,7 @@ section{
     color: rgba(204, 0, 0, .9);
     font-weight: 700;
 }
+
 #contact{
     width: 100%;
     height: 80vh;
@@ -139,9 +153,12 @@ section{
 }
 
 footer{
-    position: relative;
     background-color: var(--color-footer);
+    display: flex;
+    align-items: center;
+    padding-left: 3%;
     width: 100vw;
     height: 10vh;
     font-size: 1.5rem;
+    box-shadow:  0 -5px 5px -5px rgba(125, 122, 128, 0.678);
 }
