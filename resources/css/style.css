@@ -6,7 +6,7 @@
     --color-button-background: rgba(0, 82, 204, 0.89); /*blue*/
     --color-button-hover: rgb(80, 113, 163); /*blue*/
     --color-navbar-background: rgb(141, 6, 96);/*blue*/
-    --color-projects-background: rgb(171, 175, 175);
+    --color-projects-background: rgb(229, 231, 231);
     --color-footer: rgb(175, 8, 92); /*pink*/
   }
 html{
@@ -44,6 +44,12 @@ h1{
 }
 h2{
     font-size: 4.5em;
+}
+h4{
+    font-size: 3.5em;
+}
+h5{
+    font-size: 3em;
 }
 section{
     position: relative;
@@ -89,8 +95,9 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: mintcream;
+    color: rgb(230, 240, 235);
     position: relative;
+    text-shadow: 2px 2px 4px #070606;
 }
 
 #projects{
@@ -99,6 +106,25 @@ section{
     height: auto;
     position: relative;
     padding: 10em 0;
+    text-align: center;
+}
+#projects h2{
+    color: rgba(0, 0, 0, 0.9);
+    margin: 3vh 0 10vh 0;
+}
+
+.project-tile{
+    box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
+    -moz-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
+    -o-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
+    transition: all .5s;
+}
+.project-tile:hover {
+    box-shadow: 10px 20px  10px rgba(0,0,0,0.6);
+    -moz-box-shadow: 10px 20px  10px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 10px 20px  10px rgba(0,0,0,0.6);
+    -o-box-shadow: 10px 20px  10px rgba(0,0,0,0.6);
 }
 
 .project-tile > div{
@@ -106,41 +132,38 @@ section{
     color: white;
     text-align: center;
     width: 100%;
-    padding: 5% 0;
+    padding: 3% 0;
 }
 
 .wrapper {
-    width: 90vw;
+    width: 70vw;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(25vw, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(40vh, 1fr));
     grid-column-gap: 5rem;
     grid-row-gap: 5vw;
     margin: 0 auto;
 }
 
-.motos-img{
-    height: 30vw;
+.project-img{
+    height: 35vh;
     width: 100%;
 }
 
 .btn{
-    background-color: rgba(255, 77, 77, 1);
+    background-color: rgba(197, 8, 112, 0.849);
     width:  100%;
-    min-height: 40px;
-    margin: 0 auto;
-    font-weight: 400;
+    padding: 1.6rem 0;
+    font-size: 1.6em;
+    font-weight: 500;
     color: #ffffff;
-    box-shadow:inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17),inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
     text-align:center;
-    transition: all 2s;
+    transition: all .5s;
 }
 
 .btn:hover, .btn:active {
-    background-color: #FFFFFF;
-    border:.2em solid rgba(204, 0, 0, .7);
+    background-color: rgb(62, 161, 120);
     box-shadow:inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.27),inset 0 0.6em 2em -0.3em rgba(255,255,255,0.25),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
-    color: rgba(204, 0, 0, .9);
-    font-weight: 700;
+    color: rgba(255, 255, 255, 0.904);
 }
 
 #contact{
@@ -151,14 +174,22 @@ section{
     justify-content: center;
     align-items: center;
 }
+#contact a{
+    text-decoration: none;
+    color: inherit;
+}
 
 footer{
     background-color: var(--color-footer);
+    background-image: linear-gradient(170deg,
+      rgba(99, 15, 67, 0.726),
+      rgba(184, 28, 101, 0.699)
+    ), url();
     display: flex;
     align-items: center;
     padding-left: 3%;
     width: 100vw;
     height: 10vh;
     font-size: 1.5rem;
-    box-shadow:  0 -5px 5px -5px rgba(125, 122, 128, 0.678);
+    box-shadow:  0 -5px 5px -5px rgba(153, 152, 153, 0.678);
 }
