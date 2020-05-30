@@ -10,6 +10,7 @@
     --color-footer: rgb(175, 8, 92); /*pink*/
   }
 html{
+    font-family: 'Montserrat Alternates', sans-serif;
     font-size: 62.5%;
     scroll-behavior: smooth;
     color: var(--color-body-text);
@@ -76,13 +77,13 @@ section{
     
   .nav-links{
     display: flex;
-    padding: 3rem 0rem;
+    padding: 2.5rem 0;
   }
   .nav-links a{
     font-size: 2rem;
     color: floralwhite;
     text-decoration: none;
-    padding: 2.9rem 5rem;
+    padding: 2.3rem 3rem;
   }
   .nav-links a:hover{
       background-color: rgb(129, 30, 96);
@@ -105,7 +106,7 @@ section{
     width: 100%;
     height: auto;
     position: relative;
-    padding: 10em 0;
+    padding: 10em 0 15em 0;
     text-align: center;
 }
 #projects h2{
@@ -136,16 +137,16 @@ section{
 }
 
 .wrapper {
-    width: 70vw;
+    width: 90vw;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(40vh, 1fr));
-    grid-column-gap: 5rem;
-    grid-row-gap: 5vw;
+    grid-template-columns: repeat(auto-fill, minmax(25vw, 1fr));
+    grid-column-gap: 2vw;
+    grid-row-gap: 10vh;
     margin: 0 auto;
 }
 
 .project-img{
-    height: 35vh;
+    height: 40vh;
     width: 100%;
 }
 
