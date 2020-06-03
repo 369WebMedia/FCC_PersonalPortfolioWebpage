@@ -81,16 +81,15 @@ a{
       rgba(49, 1, 70, 0.9)
     ), url();
 }
-    
-  .nav-links{
+.nav-links{
     display: flex;
-    padding: 2.5rem 0;
-  }
-  .nav-links a{
+    padding: 2rem 0;
+}
+.nav-links a{
     font-size: 2rem;
     color: floralwhite;
     text-decoration: none;
-    padding: 2.3rem 3rem;
+    padding: 1.9rem 2.5rem;
   }
   .nav-links a:hover{
       background-color: rgb(129, 30, 96);
@@ -110,7 +109,8 @@ a{
     text-shadow: 2px 2px 4px #070606;
 }
 #welcome-section h1{
-padding: 2rem;
+    text-align: center;
+    padding: 2rem 10%;
 }
 .myname{
     font-family: 'Rock Salt', cursive;
@@ -125,11 +125,13 @@ padding: 2rem;
     text-align: center;
 }
 #projects h2{
-    color: rgba(0, 0, 0, 0.9);
+    color: rgba(24, 23, 23, 0.733);
+    text-shadow: 2px 2px 4px #9b9a9a;
     margin: 3vh 0 10vh 0;
 }
 
 .project-tile{
+    height: 25vw;
     border-radius: 10px;
     box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
     -moz-box-shadow: 10px 10px  5px rgba(0,0,0,0.6);
@@ -154,7 +156,7 @@ padding: 2rem;
 }
 
 .project-img{
-    height: 45vh;
+    height: 85%;
     width: 100%;
     border-radius: 10px 10px 0 0;
 }
@@ -166,7 +168,7 @@ padding: 2rem;
 .btn{
     background-color: rgba(197, 8, 112, 0.849);
     width: 100%;
-    padding: 2rem 0;
+    height: 15%;
     border-radius: 0 0 10px 10px;
     border-style: none;
     font-size: 1.6em;
@@ -213,11 +215,16 @@ padding: 2rem;
 
 #contact{
     width: 100%;
-    height: 80vh;
+    height: 82vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+#contact h2{
+    line-height: 6rem;
+    font-size: 3rem;
+    text-align: center;
 }
 #contact a{
     text-decoration: none;
@@ -225,14 +232,21 @@ padding: 2rem;
 }
 .icons{
     display: flex;
-    font-size: 1.6rem;
+    font-size: 2rem;
     margin: 3rem 0;
 }
-.fas,
-.fab{
-    padding-left: 3rem;
+.contact-links {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
     font-size: 2.5rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
 }
+
+  .contact-links:hover {
+    transform: scale(1.2);
+  }
 
 footer{
     background-color: var(--color-footer);
@@ -244,8 +258,84 @@ footer{
     align-items: center;
     padding-left: 3%;
     width: 100vw;
-    height: 10vh;
+    height: 8vh;
     font-family: 'Special Elite', cursive;
     font-size: 1.5rem;
     box-shadow:  0 -5px 5px -5px rgba(153, 152, 153, 0.678);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px){
+    .main-doc{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    #welcome-section h1{
+        font-size: 3.25rem;
+        line-height: 5rem;
+        padding: 1rem inherit;
+    }
+    .wrapper {
+        width: 80%;
+        grid-template-columns: repeat(auto-fill, minmax(40vw, 1fr));
+    }
+    .project-tile{
+        height: 65vw;
+    }
+}
+
+/* Extra small devices (phones, up to 767px) */
+@media only screen and (max-width: 767px){
+    #navbar{
+        justify-content: center;
+    }
+    #projects h2{
+        font-size: 2.75rem;
+        padding: 0 10%;
+    }
+    .contact-links{
+        font-size: 1.75rem;
+        padding: 1rem;
+    }
+}
+
+/* Extra small devices (phones, 601 to 767px) */
+@media only screen and (min-width: 601px) and (max-width: 767px){
+    #navbar{
+        justify-content: center;
+    }
+    #welcome-section h1{
+        font-size: 3.75rem;
+        line-height: 6rem;
+        padding: 1rem inherit;
+    }
+    #projects h2{
+        font-size: 3rem;
+    }
+    .wrapper {
+        width: 70%;
+        grid-template-columns: repeat(auto-fill, minmax(40vw, 1fr));
+    }
+    .project-tile{
+        height: 50vw;
+    }
+    
+}
+
+/* Medium devices (landscape tablets, 768 to 991px) */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    #welcome-section h1{
+        padding: 1rem inherit;
+    }
+    #projects h2{
+        font-size: 3.5rem;
+    }
+    .wrapper {
+        width: 90%;
+        grid-template-columns: repeat(auto-fill, minmax(35vw, 1fr));
+    }
+    .project-tile{
+        height: 35vw;
+    }
 }
