@@ -198,15 +198,15 @@ a{
     transition: 0.5s;
   }
   .btn span:after {
-    content: '<html>';
+    content: '< / >';
     position: absolute;
     opacity: 0;
     top: 0;
     right: -20px;
-    transition: 0.5s;
+    transition: 0.25s;
   }
   .btn:hover span {
-    padding-right: 65px;
+    padding-right: 50px;
   }
   .btn:hover span:after {
     opacity: 1;
