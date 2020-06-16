@@ -100,7 +100,7 @@ a{
     margin: 6px 0;
 }
 
-#welcome{
+#welcome-section{
     background-color: var(--color-section-background);
     display: flex;
     flex-direction: column;
@@ -113,7 +113,7 @@ a{
     color: rgb(81, 83, 85);
 }
 
-#welcome h1{
+#welcome-section h1{
     line-height: 4rem;
     margin-bottom: 4vh;
     text-shadow: 2px 2px 4px #726f6f;
@@ -132,7 +132,7 @@ a{
     flex-wrap: wrap;
     padding: 0 5%;
 }
-#welcome ul{
+#welcome-section ul{
     display: flex;
     color: rgba(136, 20, 151, 0.904);
 }
@@ -325,7 +325,7 @@ footer{
 
 /* Medium devices (landscape phones and tablets, 768 and up) */
 @media only screen and (min-width: 768px) {
-    #welcome h1{
+    #welcome-section h1{
         font-size: 5.25rem;
         line-height: 5.75rem;
     }
